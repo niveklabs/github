@@ -4,9 +4,8 @@ terraform {
   }
 }
 
-resource "github_repository_project" "this" {
-  body       = var.body
-  name       = var.name
+data "github_branch" "this" {
+  branch     = var.branch
   repository = var.repository
 }
 

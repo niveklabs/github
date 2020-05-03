@@ -3,7 +3,7 @@
 [embedmd]:# (github.tf)
 ```tf
 provider "github" {
-  version = "2.6.1"
+  version = "2.7.0"
 
   anonymous    = null
   base_url     = null
