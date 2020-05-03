@@ -25,7 +25,7 @@ variable "configuration" {
   type = set(object(
     {
       content_type = string
-      insecure_ssl = string
+      insecure_ssl = bool
       secret       = string
       url          = string
     }
