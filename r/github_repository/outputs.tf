@@ -33,6 +33,11 @@ output "id" {
   value       = github_repository.this.id
 }
 
+output "node_id" {
+  description = "returns a string"
+  value       = github_repository.this.node_id
+}
+
 output "ssh_clone_url" {
   description = "returns a string"
   value       = github_repository.this.ssh_clone_url

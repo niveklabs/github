@@ -68,6 +68,11 @@ output "name" {
   value       = data.github_user.this.name
 }
 
+output "node_id" {
+  description = "returns a string"
+  value       = data.github_user.this.node_id
+}
+
 output "public_gists" {
   description = "returns a number"
   value       = data.github_user.this.public_gists

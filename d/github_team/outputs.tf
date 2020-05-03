@@ -18,6 +18,11 @@ output "name" {
   value       = data.github_team.this.name
 }
 
+output "node_id" {
+  description = "returns a string"
+  value       = data.github_team.this.node_id
+}
+
 output "permission" {
   description = "returns a string"
   value       = data.github_team.this.permission

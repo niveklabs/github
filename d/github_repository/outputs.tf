@@ -73,6 +73,11 @@ output "id" {
   value       = data.github_repository.this.id
 }
 
+output "node_id" {
+  description = "returns a string"
+  value       = data.github_repository.this.node_id
+}
+
 output "private" {
   description = "returns a bool"
   value       = data.github_repository.this.private

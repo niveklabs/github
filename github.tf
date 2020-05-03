@@ -1,5 +1,5 @@
 provider "github" {
-  version = "2.6.0"
+  version = "2.6.1"
 
   anonymous    = null
   base_url     = null
