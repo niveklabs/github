@@ -51,6 +51,7 @@ variable "restrictions" {
   description = "nested mode: NestingList, min items: 0, max items: 1"
   type = set(object(
     {
+      apps  = set(string)
       teams = set(string)
       users = set(string)
     }

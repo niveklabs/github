@@ -22,6 +22,7 @@ module "github_branch_protection" {
   }]
 
   restrictions = [{
+    apps  = []
     teams = []
     users = []
   }]

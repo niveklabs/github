@@ -4,10 +4,9 @@ terraform {
   }
 }
 
-resource "github_repository_deploy_key" "this" {
+data "github_actions_public_key" "this" {
   key        = var.key
-  read_only  = var.read_only
+  key_id     = var.key_id
   repository = var.repository
-  title      = var.title
 }
 

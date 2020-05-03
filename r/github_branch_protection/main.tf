@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    github = ">= 2.4.1"
+    github = ">= 2.5.0"
   }
 }
 
@@ -34,6 +34,7 @@ resource "github_branch_protection" "this" {
   dynamic "restrictions" {
     for_each = var.restrictions
     content {
+      apps  = restrictions.value["apps"]
       teams = restrictions.value["teams"]
       users = restrictions.value["users"]
     }
