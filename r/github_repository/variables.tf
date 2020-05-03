@@ -34,6 +34,12 @@ variable "default_branch" {
   default     = null
 }
 
+variable "delete_branch_on_merge" {
+  description = "(optional)"
+  type        = bool
+  default     = null
+}
+
 variable "description" {
   description = "(optional)"
   type        = string
@@ -73,6 +79,12 @@ variable "has_wiki" {
 variable "homepage_url" {
   description = "(optional)"
   type        = string
+  default     = null
+}
+
+variable "is_template" {
+  description = "(optional)"
+  type        = bool
   default     = null
 }
 

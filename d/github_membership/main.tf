@@ -4,7 +4,7 @@ terraform {
   }
 }
 
-data "github_team" "this" {
-  slug = var.slug
+data "github_membership" "this" {
+  username = var.username
 }
 
