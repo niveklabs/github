@@ -1,5 +1,5 @@
 module "github_repository_webhook" {
-  source = "./github/r/github_repository_webhook"
+  source = "./modules/github/r/github_repository_webhook"
 
   active     = null
   events     = []

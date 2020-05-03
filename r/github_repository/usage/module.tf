@@ -1,5 +1,5 @@
 module "github_repository" {
-  source = "./github/r/github_repository"
+  source = "./modules/github/r/github_repository"
 
   allow_merge_commit = null
   allow_rebase_merge = null

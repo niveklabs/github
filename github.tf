@@ -1,7 +1,3 @@
-# github Provider
-
-[embedmd]:# (github.tf)
-```tf
 provider "github" {
   version = "2.4.0"
 
@@ -12,4 +8,3 @@ provider "github" {
   organization = null
   token        = null
 }
-```

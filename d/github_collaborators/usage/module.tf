@@ -1,5 +1,5 @@
 module "github_collaborators" {
-  source = "./github/d/github_collaborators"
+  source = "./modules/github/d/github_collaborators"
 
   affiliation = null
   owner       = null

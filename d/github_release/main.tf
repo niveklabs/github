@@ -4,9 +4,11 @@ terraform {
   }
 }
 
-data "github_collaborators" "this" {
-  affiliation = var.affiliation
+data "github_release" "this" {
   owner       = var.owner
+  release_id  = var.release_id
+  release_tag = var.release_tag
   repository  = var.repository
+  retrieve_by = var.retrieve_by
 }
 

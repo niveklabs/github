@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    github = ">= 2.3.2"
+    github = ">= 2.4.0"
   }
 }
 

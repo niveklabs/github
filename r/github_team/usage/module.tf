@@ -1,5 +1,5 @@
 module "github_team" {
-  source = "./github/r/github_team"
+  source = "./modules/github/r/github_team"
 
   description    = null
   ldap_dn        = null

@@ -1,5 +1,5 @@
 module "github_branch_protection" {
-  source = "./github/r/github_branch_protection"
+  source = "./modules/github/r/github_branch_protection"
 
   branch                 = null
   enforce_admins         = null
