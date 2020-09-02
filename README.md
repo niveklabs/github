@@ -3,7 +3,7 @@
 [embedmd]:# (github.tf)
 ```tf
 provider "github" {
-  version = "2.8.0"
+  version = "2.8.1"
 
   # anonymous - (optional) is a type of bool
   anonymous = null
