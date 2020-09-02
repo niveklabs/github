@@ -39,6 +39,8 @@ module "github_repository" {
   private = null
   # topics - (optional) is a type of set of string
   topics = []
+  # visibility - (optional) is a type of string
+  visibility = null
 
   template = [{
     owner      = null

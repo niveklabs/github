@@ -38,6 +38,11 @@ output "node_id" {
   value       = github_repository.this.node_id
 }
 
+output "private" {
+  description = "returns a bool"
+  value       = github_repository.this.private
+}
+
 output "ssh_clone_url" {
   description = "returns a string"
   value       = github_repository.this.ssh_clone_url
@@ -46,6 +51,11 @@ output "ssh_clone_url" {
 output "svn_url" {
   description = "returns a string"
   value       = github_repository.this.svn_url
+}
+
+output "visibility" {
+  description = "returns a string"
+  value       = github_repository.this.visibility
 }
 
 output "this" {

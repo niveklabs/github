@@ -98,6 +98,11 @@ output "topics" {
   value       = data.github_repository.this.topics
 }
 
+output "visibility" {
+  description = "returns a string"
+  value       = data.github_repository.this.visibility
+}
+
 output "this" {
   value = github_repository.this
 }
