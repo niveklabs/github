@@ -1,9 +1,13 @@
 module "github_branch_protection" {
   source = "./modules/github/r/github_branch_protection"
 
-  branch                 = null
-  enforce_admins         = null
-  repository             = null
+  # branch - (required) is a type of string
+  branch = null
+  # enforce_admins - (optional) is a type of bool
+  enforce_admins = null
+  # repository - (required) is a type of string
+  repository = null
+  # require_signed_commits - (optional) is a type of bool
   require_signed_commits = null
 
   required_pull_request_reviews = [{
