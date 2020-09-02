@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    github = ">= 2.9.0"
+    github = ">= 2.9.1"
   }
 }
 
@@ -24,7 +24,6 @@ resource "github_repository" "this" {
   name                   = var.name
   private                = var.private
   topics                 = var.topics
-  visibility             = var.visibility
 
   dynamic "template" {
     for_each = var.template

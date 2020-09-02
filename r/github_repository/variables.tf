@@ -111,12 +111,6 @@ variable "topics" {
   default     = null
 }
 
-variable "visibility" {
-  description = "(optional)"
-  type        = string
-  default     = null
-}
-
 variable "template" {
   description = "nested mode: NestingList, min items: 0, max items: 1"
   type = set(object(
